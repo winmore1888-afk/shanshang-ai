@@ -1,0 +1,272 @@
+// 智能体数据模型和配置
+
+export const AGENT_CATEGORIES = [
+  { id: 'all', name: '全部', icon: '🌟' },
+  { id: 'content', name: '内容创作', icon: '✍️' },
+  { id: 'finance', name: '投资理财', icon: '💰' },
+  { id: 'education', name: '教育', icon: '🎓' }
+]
+
+export const AGENTS = [
+  {
+    id: 'agent_001',
+    name: '2.0 爆款短剧提示词生成智能体',
+    fullName: '【善商AI】2.0 爆款短剧提示词生成智能体',
+    category: 'content',
+    description: '2.0升级版爆款短剧提示词生成器，基于最新AI大模型，帮你快速生成爆款短剧的完整提示词方案，覆盖古装、现代、悬疑等多种题材。',
+    features: [
+      '一键生成爆款短剧完整提示词',
+      '支持古装/现代/悬疑/甜宠等多种题材',
+      '自动优化剧本结构和人物设定',
+      '2.0版本：更强的创作力和爆款命中率'
+    ],
+    icon: '🎬',
+    url: 'https://t.doruo.cn/2qTYU0icg',
+    tags: ['爆款', '短剧', '2.0'],
+    isHot: true,
+    isNew: true,
+    usageCount: 15800,
+    rating: 4.8
+  },
+  {
+    id: 'agent_002',
+    name: '爆款短剧提示词生成智能体',
+    fullName: '【善商AI】爆款短剧提示词生成智能体',
+    category: 'content',
+    description: '专业爆款短剧提示词生成智能体，帮助内容创作者快速产出高质量短剧脚本和提示词，让你的短剧更容易成为爆款。',
+    features: [
+      '快速生成短剧脚本提示词',
+      '智能分析爆款元素',
+      '多平台适配优化',
+      '持续更新热门题材库'
+    ],
+    icon: '📺',
+    url: 'http://a.u9c.cn/5HwhOl',
+    tags: ['短剧', '创作'],
+    isHot: false,
+    isNew: false,
+    usageCount: 12300,
+    rating: 4.6
+  },
+  {
+    id: 'agent_003',
+    name: '剧情带货营销视频智能体',
+    fullName: '【善商AI】剧情带货营销视频智能体',
+    category: 'content',
+    description: '专注创意剧情+产品营销的AI剧情带货营销长视频智能体，无论古装宫廷风还是荒诞喜剧风，都能输出完整视频方案，包含故事梗概、角色定妆照、分段提示词、封面图和剪辑指导。',
+    features: [
+      '完整剧情带货视频方案',
+      '故事梗概+角色定妆照生成',
+      '分段提示词+封面图设计',
+      '详细剪辑指导，新手友好'
+    ],
+    icon: '🛒',
+    url: 'http://a.u9c.cn/6j38Lc',
+    tags: ['带货', '营销', '视频'],
+    isHot: true,
+    isNew: false,
+    usageCount: 8900,
+    rating: 4.7
+  },
+  {
+    id: 'agent_004',
+    name: '公司估值大师天团',
+    fullName: '【善商AI】公司估值大师天团',
+    category: 'finance',
+    description: '集合巴菲特、芒格、卡拉曼等7位顶级估值专家智慧，用护城河贴现、清算价值、神奇公式、周期位置等七大方法帮你透视公司内在价值，给出多维估值区间。',
+    features: [
+      '七大估值方法综合分析',
+      '护城河贴现+清算价值评估',
+      '神奇公式+周期位置判断',
+      '巴菲特/芒格/卡拉曼等7位大师视角'
+    ],
+    icon: '🏢',
+    url: 'http://a.u9c.cn/5P2uT2',
+    tags: ['估值', '投资', '大师'],
+    isHot: true,
+    isNew: false,
+    usageCount: 6700,
+    rating: 4.9
+  },
+  {
+    id: 'agent_005',
+    name: '家庭理财专家天团',
+    fullName: '【善商AI】家庭理财专家天团',
+    category: 'finance',
+    description: '汇聚苏茜·欧曼、戴夫·拉姆齐、罗伯特·清崎、大卫·巴赫等8位顶级家庭理财大师智慧，帮你解决债务、投资、退休养老等家庭财务问题。',
+    features: [
+      '8位顶级理财大师视角',
+      '快速清债方案规划',
+      '长期投资组合建议',
+      '退休养老金规划执行方案'
+    ],
+    icon: '🏠',
+    url: 'http://a.u9c.cn/640IRM',
+    tags: ['理财', '家庭', '规划'],
+    isHot: false,
+    isNew: false,
+    usageCount: 9200,
+    rating: 4.7
+  },
+  {
+    id: 'agent_006',
+    name: '财务造假甄别天团',
+    fullName: '【善商AI】财务造假甄别天团',
+    category: 'finance',
+    description: '集合詹姆斯·查诺斯、卡森·布洛克、黄世忠、夏草等11位全球顶级打假专家能力，精准透视财务风险，帮你识别上市公司财务造假。',
+    features: [
+      '11位全球顶级打假专家能力',
+      '做空实战+实地尽调逻辑',
+      '五维分析框架+AI模型',
+      'A股/中概股全面覆盖'
+    ],
+    icon: '🔍',
+    url: 'http://a.u9c.cn/5stUgp',
+    tags: ['财务', '造假', '风控'],
+    isHot: false,
+    isNew: false,
+    usageCount: 5400,
+    rating: 4.8
+  },
+  {
+    id: 'agent_007',
+    name: '段永平价值投资版',
+    fullName: '【善商AI】段永平价值投资版',
+    category: 'finance',
+    description: '以段永平投资哲学为核心的AI价值投资顾问，用"买股票就是买公司"的理念帮你分析投资标的，寻找好生意、好公司、好价格。',
+    features: [
+      '段永平投资哲学驱动',
+      '好生意+好公司+好价格分析',
+      '长期价值投资视角',
+      '消费/科技行业深度洞察'
+    ],
+    icon: '📈',
+    url: 'http://a.u9c.cn/5WyHWh',
+    tags: ['价值投资', '段永平'],
+    isHot: false,
+    isNew: false,
+    usageCount: 7800,
+    rating: 4.8
+  },
+  {
+    id: 'agent_008',
+    name: '查理·芒格价值投资版',
+    fullName: '【善商AI】查理·芒格价值投资版',
+    category: 'finance',
+    description: '以查理·芒格多元思维模型为核心的AI投资顾问，用"反过来想，总是反过来想"的智慧帮你看清投资本质，避免认知偏差。',
+    features: [
+      '芒格多元思维模型',
+      '逆向思维投资分析',
+      '认知偏差纠正',
+      '跨学科智慧融合'
+    ],
+    icon: '🧠',
+    url: 'http://a.u9c.cn/640IRW',
+    tags: ['价值投资', '芒格'],
+    isHot: false,
+    isNew: false,
+    usageCount: 6500,
+    rating: 4.7
+  },
+  {
+    id: 'agent_009',
+    name: '巴菲特价值投资顾问',
+    fullName: '【善商AI】巴菲特价值投资顾问',
+    category: 'finance',
+    description: '以巴菲特"护城河"理论为核心的AI投资顾问，帮你寻找具有持久竞争优势的优秀企业，实践长期价值投资理念。',
+    features: [
+      '护城河理论深度分析',
+      'ROE/自由现金流评估',
+      '安全边际计算',
+      '长期持有策略建议'
+    ],
+    icon: '💎',
+    url: 'http://a.u9c.cn/6bwVWD',
+    tags: ['价值投资', '巴菲特'],
+    isHot: true,
+    isNew: false,
+    usageCount: 11200,
+    rating: 4.9
+  },
+  {
+    id: 'agent_010',
+    name: '高考志愿填报智能体',
+    fullName: '【考上啦】高考志愿填报智能体',
+    category: 'education',
+    description: '拥有20年一线经验的高考志愿填报辅导专家，累计为超5000名考生制定"冲、稳、保"志愿方案，成功率98%，熟悉全国各省份高考政策、院校更名、学科评估和就业趋势。',
+    features: [
+      '20年高考志愿填报经验',
+      '冲稳保梯度方案定制',
+      '全国各省政策全覆盖',
+      '学科评估+就业趋势分析'
+    ],
+    icon: '🎓',
+    url: 'http://a.u9c.cn/5stUgz',
+    tags: ['高考', '志愿', '填报'],
+    isHot: true,
+    isNew: false,
+    usageCount: 21500,
+    rating: 4.9
+  }
+]
+
+// 定价套餐
+export const PRICING_PLANS = [
+  {
+    id: 'trial',
+    name: '体验套餐',
+    price: 9.90,
+    originalPrice: 29.90,
+    duration: '1天',
+    durationDays: 1,
+    features: [
+      '全部智能体畅用',
+      '1天无限次使用',
+      '无广告体验',
+      '不自动续费'
+    ],
+    color: '#00d4aa',
+    tag: '新用户体验',
+    popular: false
+  },
+  {
+    id: 'yearly',
+    name: '年度套餐',
+    price: 19.90,
+    originalPrice: 99.90,
+    duration: '1年',
+    durationDays: 365,
+    features: [
+      '全部智能体畅用',
+      '365天无限次使用',
+      '优先体验新功能',
+      '专属客服通道',
+      '无广告体验'
+    ],
+    color: '#6c5ce7',
+    tag: '超值推荐',
+    popular: true
+  },
+  {
+    id: 'lifetime',
+    name: '终身套餐',
+    price: 99.90,
+    originalPrice: 299.90,
+    duration: '永久',
+    durationDays: -1,
+    features: [
+      '全部智能体永久使用',
+      '终身无限次使用',
+      '所有新功能优先体验',
+      'VIP专属客服',
+      '无广告体验',
+      '专属用户社群'
+    ],
+    color: '#ffd700',
+    tag: '限时优惠',
+    popular: false
+  }
+]
+
+// 免费体验次数
+export const FREE_TRIAL_COUNT = 3

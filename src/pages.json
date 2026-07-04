@@ -1,0 +1,100 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "善商AI智能体平台",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "智能体详情",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/chat/chat",
+      "style": {
+        "navigationBarTitleText": "智能体对话",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/pricing/pricing",
+      "style": {
+        "navigationBarTitleText": "开通会员",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/order/order",
+      "style": {
+        "navigationBarTitleText": "确认订单",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/about/about",
+      "style": {
+        "navigationBarTitleText": "关于我们",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "善商AI",
+    "navigationBarBackgroundColor": "#1a1a2e",
+    "backgroundColor": "#0f0f23",
+    "backgroundColorTop": "#0f0f23",
+    "backgroundColorBottom": "#0f0f23"
+  },
+  "tabBar": {
+    "color": "#8890a0",
+    "selectedColor": "#00d4aa",
+    "backgroundColor": "#1a1a2e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "智能体",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/pricing/pricing",
+        "text": "开通会员",
+        "iconPath": "static/icons/vip.png",
+        "selectedIconPath": "static/icons/vip-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/icons/user.png",
+        "selectedIconPath": "static/icons/user-active.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {}
+  }
+}
